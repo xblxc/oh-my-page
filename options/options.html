@@ -9,11 +9,15 @@
         h3{ margin-bottom: 40px; }
         [v-cloak] { display: none; }
         .rule { margin-bottom: 30px; }
+        .noty { position: fixed;top: 0;left: 0;width: 100%;height: 32px;line-height: 32px;text-align: center;transition: transform .4s; }
+        .noty-enter-active {transform: translateY(0);}
+        .noty-enter, .noty-leave-active {transform: translateY(-100%);}
     </style>
 </head>
 <body>
     <h3 class="text-center">Oh-My-Page</h3>
     <div id="app" class="app row">
+        <noty ref="noty" timeout="2200"></noty>
         <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
             <div class="form-horizontal">
                 <div class="form-group clearfix">
