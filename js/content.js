@@ -1,6 +1,6 @@
 !function () {
     chrome.runtime.sendMessage({
-        site: document.location
+        url: document.location.href,
     }, function(response){
         // console.log('response => ', response);
     });
