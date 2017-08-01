@@ -12,29 +12,27 @@
 
 ### Example
 
-url: 
-
-  ``` https://github.com ```
+url: ` https://github.com `
   
 code: 
 
-  ``` js
-    !function(){
-      var form = document.querySelector('.js-site-search-form');
-      var scope = document.querySelector('.header-search-scope');
-      var toggleList = [
-        ['/search', 'github'],
-        [form.getAttribute('action'), scope.innerText]
-      ];
-      var count = 0;
-      scope.onclick = function(e){
-        count = count % 2;
-        form.setAttribute('action', toggleList[count][0]);
-        scope.innerText = toggleList[count][1];
-        ++count;
-        e.preventDefault();
-      };
-    }();
-  ```
+```
+!function(){
+  var form = document.querySelector('.js-site-search-form');
+  var scope = document.querySelector('.header-search-scope');
+  var toggleList = [
+    ['/search', 'github'],
+    [form.getAttribute('action'), scope.innerText]
+  ];
+  var count = 0;
+  scope.onclick = function(e){
+    count = count % 2;
+    form.setAttribute('action', toggleList[count][0]);
+    scope.innerText = toggleList[count][1];
+    ++count;
+    e.preventDefault();
+  };
+}();  
+```
   
 该demo的功能就是：切换github搜索输入框的搜索范围；
