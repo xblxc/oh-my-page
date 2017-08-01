@@ -20,7 +20,7 @@ https://github.com
   
 code: 
 
-```
+``` js
 !function(){
   var form = document.querySelector('.js-site-search-form');
   var scope = document.querySelector('.header-search-scope');
