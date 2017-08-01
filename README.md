@@ -13,10 +13,12 @@
 ### Example
 
 url: 
+
   ``` https://github.com ```
   
 code: 
-  ```js
+
+  ``` js
     !function(){
       var form = document.querySelector('.js-site-search-form');
       var scope = document.querySelector('.header-search-scope');
@@ -34,4 +36,5 @@ code:
       };
     }();
   ```
+  
 该demo的功能就是：切换github搜索输入框的搜索范围；
